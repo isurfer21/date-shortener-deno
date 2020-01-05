@@ -29,10 +29,21 @@ Similarly, decode it back as
 `f8kj → f.8.kj → 15.8.2019 → 15-8-2019`
 
 ## Install
+At first, you need the repository on your machine, for which you can use this command
 
 ```
-deno install date_shortener https://isurfer21.github.io/date-shortener-deno/mod.js --allow-net --allow-read
+git clone https://github.com/isurfer21/date-shortener-deno.git
 ```
+
+Alternatively, you can download it's zipped file from [https://github.com/isurfer21/date-shortener-deno/archive/master.zip](https://github.com/isurfer21/date-shortener-deno/archive/master.zip)
+
+Then you need to make a binary file for the app that you can do using this command
+
+```
+deno install date_shortener mod.js
+```
+
+You may need to add `.deno/bin` to `PATH` at last.
 
 ## Usage
 Open the application in terminal & run the required commands as shown below
