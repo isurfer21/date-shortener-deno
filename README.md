@@ -46,7 +46,7 @@ cd date-shortener-deno
 Then you need to make a binary file for the app that you can do using this command
 
 ```
-deno install date_shortener mod.js
+deno install ds mod.js
 ```
 
 You may need to add `.deno/bin` to `PATH` at last.
@@ -58,13 +58,13 @@ Open the application in terminal & run the required commands as shown below
 Few sample usages are given below
 
 ```
-$ date_shortener -t
+$ ds -t
 2ckj
-$ date_shortener -t -s
+$ ds -t -s
 2-12-2019 -> 2.12.2019 -> 2.c.kj -> 2ckj
-$ date_shortener -d 2ckj -s
+$ ds -d 2ckj -s
 2ckj -> 2.c.kj -> 2.12.2019 -> 2-12-2019
-$ date_shortener -e 2/12/2019 -s
+$ ds -e 2/12/2019 -s
 2-12-2019 -> 2.12.2019 -> 2.c.kj -> 2ckj
 ```
 
@@ -72,11 +72,11 @@ $ date_shortener -e 2/12/2019 -s
 Find out all the available command options & flags 
 
 ```
-$ date_shortener -h
+$ ds -h
 DATE SHORTENER
 It is a tool to shorten (encode) the date and expand (decode) shortened date back to original date.
 
-Usage: date_shortener [options]
+Usage: ds [options]
 
 Options:
     -h, --help                 display the help menu
@@ -87,13 +87,13 @@ Options:
     -s, --steps                show with steps
 
 Examples: 
- $ date_shortener -v 
- $ date_shortener -t 
- $ date_shortener -t -s 
- $ date_shortener -e 15/08/19 
- $ date_shortener -e 15/08/2019 -s 
- $ date_shortener -d f8j 
- $ date_shortener -d f8kj -s 
+ $ ds -v 
+ $ ds -t 
+ $ ds -t -s 
+ $ ds -e 15/08/19 
+ $ ds -e 15/08/2019 -s 
+ $ ds -d f8j 
+ $ ds -d f8kj -s 
 
 ```
 
@@ -101,7 +101,7 @@ Examples:
 See the currently available version
 
 ```
-$ date_shortener -v
+$ ds -v
 DATE SHORTENER (Version 1.0.0)
 Copyright (c) 2019 Abhishek Kumar.
 Licensed under the MIT License.
