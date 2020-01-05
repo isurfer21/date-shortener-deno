@@ -1,7 +1,7 @@
 import { parse } from 'https://deno.land/std/flags/mod.ts';
 
-import init, { encode, decode } from './pkg/ds.js';
-import * as wasm from './pkg/ds_bg.wasm';
+import init, { encode, decode } from 'https://isurfer21.github.io/date-shortener-deno/lib/ds.js';
+import * as wasm from 'https://isurfer21.github.io/date-shortener-deno/lib/ds_bg.wasm';
 
 const APPNAME = 'DATE SHORTENER';
 const APPVER = '1.0.0';

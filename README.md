@@ -35,13 +35,13 @@ Open the application in terminal & run the required commands as shown below
 Few sample usages are given below
 
 ```
-$ deno app.js -t
+$ deno https://isurfer21.github.io/date-shortener-deno/mod.js -t
 2ckj
-$ deno app.js -t -s
+$ deno https://isurfer21.github.io/date-shortener-deno/mod.js -t -s
 2-12-2019 -> 2.12.2019 -> 2.c.kj -> 2ckj
-$ deno app.js -d 2ckj -s
+$ deno https://isurfer21.github.io/date-shortener-deno/mod.js -d 2ckj -s
 2ckj -> 2.c.kj -> 2.12.2019 -> 2-12-2019
-$ deno app.js -e 2/12/2019 -s
+$ deno https://isurfer21.github.io/date-shortener-deno/mod.js -e 2/12/2019 -s
 2-12-2019 -> 2.12.2019 -> 2.c.kj -> 2ckj
 ```
 
@@ -49,11 +49,11 @@ $ deno app.js -e 2/12/2019 -s
 Find out all the available command options & flags 
 
 ```
-$ deno app.js -h
+$ deno https://isurfer21.github.io/date-shortener-deno/mod.js -h
 DATE SHORTENER
 It is a tool to shorten (encode) the date and expand (decode) shortened date back to original date.
 
-Usage: deno app.js [options]
+Usage: deno https://isurfer21.github.io/date-shortener-deno/mod.js [options]
 
 Options:
     -h, --help                 display the help menu
@@ -64,13 +64,13 @@ Options:
     -s, --steps                show with steps
 
 Examples: 
- $ ds -v 
- $ ds -t 
- $ ds -t -s 
- $ ds -e 15/08/19 
- $ ds -e 15/08/2019 -s 
- $ ds -d f8j 
- $ ds -d f8kj -s 
+ $ deno https://isurfer21.github.io/date-shortener-deno/mod.js -v 
+ $ deno https://isurfer21.github.io/date-shortener-deno/mod.js -t 
+ $ deno https://isurfer21.github.io/date-shortener-deno/mod.js -t -s 
+ $ deno https://isurfer21.github.io/date-shortener-deno/mod.js -e 15/08/19 
+ $ deno https://isurfer21.github.io/date-shortener-deno/mod.js -e 15/08/2019 -s 
+ $ deno https://isurfer21.github.io/date-shortener-deno/mod.js -d f8j 
+ $ deno https://isurfer21.github.io/date-shortener-deno/mod.js -d f8kj -s 
 
 ```
 
@@ -78,14 +78,14 @@ Examples:
 See the currently available version
 
 ```
-$ deno app.js -v
+$ deno https://isurfer21.github.io/date-shortener-deno/mod.js -v
 DATE SHORTENER (Version 1.0.0)
 Copyright (c) 2019 Abhishek Kumar.
 Licensed under the MIT License.
 ```
 
 ## Development
-To generate the builds for all platforms at once, run this
+To generate the build & execute, run this
 
 ```
 $ sh run.sh
