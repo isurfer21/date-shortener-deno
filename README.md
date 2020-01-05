@@ -35,7 +35,13 @@ At first, you need the repository on your machine, for which you can use this co
 git clone https://github.com/isurfer21/date-shortener-deno.git
 ```
 
-Alternatively, you can download it's zipped file from [https://github.com/isurfer21/date-shortener-deno/archive/master.zip](https://github.com/isurfer21/date-shortener-deno/archive/master.zip)
+Alternatively, you can download it's zipped file from [https://github.com/isurfer21/date-shortener-deno/archive/master.zip](https://github.com/isurfer21/date-shortener-deno/archive/master.zip). Unzip it after download.
+
+Get inside the repository via
+
+```
+cd date-shortener-deno
+```
 
 Then you need to make a binary file for the app that you can do using this command
 
