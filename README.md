@@ -28,6 +28,12 @@ Similarly, decode it back as
 
 `f8kj → f.8.kj → 15.8.2019 → 15-8-2019`
 
+## Install
+
+```
+deno install date_shortener https://isurfer21.github.io/date-shortener-deno/mode.js --allow-net --allow-read
+```
+
 ## Usage
 Open the application in terminal & run the required commands as shown below
 
@@ -35,13 +41,13 @@ Open the application in terminal & run the required commands as shown below
 Few sample usages are given below
 
 ```
-$ deno https://isurfer21.github.io/date-shortener-deno/mod.js -t
+$ date_shortener -t
 2ckj
-$ deno https://isurfer21.github.io/date-shortener-deno/mod.js -t -s
+$ date_shortener -t -s
 2-12-2019 -> 2.12.2019 -> 2.c.kj -> 2ckj
-$ deno https://isurfer21.github.io/date-shortener-deno/mod.js -d 2ckj -s
+$ date_shortener -d 2ckj -s
 2ckj -> 2.c.kj -> 2.12.2019 -> 2-12-2019
-$ deno https://isurfer21.github.io/date-shortener-deno/mod.js -e 2/12/2019 -s
+$ date_shortener -e 2/12/2019 -s
 2-12-2019 -> 2.12.2019 -> 2.c.kj -> 2ckj
 ```
 
@@ -49,11 +55,11 @@ $ deno https://isurfer21.github.io/date-shortener-deno/mod.js -e 2/12/2019 -s
 Find out all the available command options & flags 
 
 ```
-$ deno https://isurfer21.github.io/date-shortener-deno/mod.js -h
+$ date_shortener -h
 DATE SHORTENER
 It is a tool to shorten (encode) the date and expand (decode) shortened date back to original date.
 
-Usage: deno https://isurfer21.github.io/date-shortener-deno/mod.js [options]
+Usage: date_shortener [options]
 
 Options:
     -h, --help                 display the help menu
@@ -64,13 +70,13 @@ Options:
     -s, --steps                show with steps
 
 Examples: 
- $ deno https://isurfer21.github.io/date-shortener-deno/mod.js -v 
- $ deno https://isurfer21.github.io/date-shortener-deno/mod.js -t 
- $ deno https://isurfer21.github.io/date-shortener-deno/mod.js -t -s 
- $ deno https://isurfer21.github.io/date-shortener-deno/mod.js -e 15/08/19 
- $ deno https://isurfer21.github.io/date-shortener-deno/mod.js -e 15/08/2019 -s 
- $ deno https://isurfer21.github.io/date-shortener-deno/mod.js -d f8j 
- $ deno https://isurfer21.github.io/date-shortener-deno/mod.js -d f8kj -s 
+ $ date_shortener -v 
+ $ date_shortener -t 
+ $ date_shortener -t -s 
+ $ date_shortener -e 15/08/19 
+ $ date_shortener -e 15/08/2019 -s 
+ $ date_shortener -d f8j 
+ $ date_shortener -d f8kj -s 
 
 ```
 
@@ -78,7 +84,7 @@ Examples:
 See the currently available version
 
 ```
-$ deno https://isurfer21.github.io/date-shortener-deno/mod.js -v
+$ date_shortener -v
 DATE SHORTENER (Version 1.0.0)
 Copyright (c) 2019 Abhishek Kumar.
 Licensed under the MIT License.
