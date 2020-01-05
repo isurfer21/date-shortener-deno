@@ -31,7 +31,7 @@ Similarly, decode it back as
 ## Install
 
 ```
-deno install date_shortener https://isurfer21.github.io/date-shortener-deno/mode.js --allow-net --allow-read
+deno install date_shortener https://isurfer21.github.io/date-shortener-deno/mod.js --allow-net --allow-read
 ```
 
 ## Usage
